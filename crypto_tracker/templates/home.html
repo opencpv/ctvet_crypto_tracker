@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crypto Price Tracker</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #1f1f1f;
+        color: white;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        text-align: center;
+        padding: 40px 0;
+        background-color: #222;
+      }
+      h1 {
+        font-size: 2.5rem;
+        margin: 0;
+        color: #e3b505;
+      }
+      table {
+        width: 80%;
+        margin: 50px auto;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        padding: 15px;
+        text-align: center;
+        border: 1px solid #444;
+      }
+      th {
+        background-color: #333;
+        color: #e3b505;
+        font-size: 1.2rem;
+      }
+      td {
+        font-size: 1.1rem;
+        background-color: #292929;
+      }
+      tr:hover td {
+        background-color: #444;
+      }
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #222;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        color: #777;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Crypto Price Tracker</h1>
+    </header>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Cryptocurrency</th>
+          <th>Price (USD)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Bitcoin</td>
+          <td>${{ crypto_data.bitcoin.usd }}</td>
+        </tr>
+        <tr>
+          <td>Ethereum</td>
+          <td>${{ crypto_data.ethereum.usd }}</td>
+        </tr>
+        <tr>
+          <td>Binance Coin</td>
+          <td>${{ crypto_data.binancecoin.usd }}</td>
+        </tr>
+        <tr>
+          <td>Cardano</td>
+          <td>${{ crypto_data.cardano.usd }}</td>
+        </tr>
+        <tr>
+          <td>Solana</td>
+          <td>${{ crypto_data.solana.usd }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <footer>
+      <p>&copy; 2024 Crypto Price Tracker</p>
+    </footer>
+  </body>
+</html>
